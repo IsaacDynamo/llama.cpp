@@ -413,7 +413,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake .. -DLLAMA_BUILD_SERVER=ON -DLLAMA_CUBLAS=ON
+          cmake .. -DLLAMA_BUILD_SERVER=ON -DLLAMA_CUBLAS=ON -DBUILD_SHARED_LIBS=ON
           cmake --build . --config Release
 
       - name: Determine tag name
